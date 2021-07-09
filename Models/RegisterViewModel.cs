@@ -11,9 +11,10 @@ namespace IdentityAspNetCore.Models
         [Required]
         public string LastName { get; set; }
 
-        [Required]
+        [Display(Name ="D.O B")]
         [DataType(DataType.DateTime)]
         public DateTime DateOfBirth { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
